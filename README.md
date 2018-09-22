@@ -7,6 +7,7 @@ This GIT repository does not contain the Maven repository for vRO libraries.
 
     #Get the Maven repository from your vRO Appliance
     scp -r root@vrohost.corp.local:/usr/lib/vco/downloads/vco-repo .
+    chmod -R a+x vco-repo
 
     #Build a version of the Container Image
     docker build -t o11n-repo:<version> .
