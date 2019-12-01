@@ -13,8 +13,8 @@ This GIT repository does not contain the Maven repository for vRO libraries.
     docker build -t o11n-repo:<version> .
 
     #Run a Container instance for a particular vRO version
-    docker run -d -p 8080:80 o11n-repo:<version>
+    docker run -d -p 7600:8080 o11n-repo:<version>
     
-The Maven repo will then be available at http://localhost:8080/vco-repo
+The Maven repo will then be available at http://localhost:7600/vco-repo/
     
 Replace *\<version\>* with the version of vRO you are creating the docker image for.  Ex: 7.1, 7.2.

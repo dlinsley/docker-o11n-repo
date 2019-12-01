@@ -1,3 +1,3 @@
-FROM nginx:1.11-alpine
-COPY vco-repo /usr/share/nginx/html/vco-repo
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+FROM bitnami/nginx:1.16-debian-9
+COPY vco-repo /app/vco-repo
+COPY nginx.conf /opt/bitnami/nginx/conf/server_blocks/vco-repo.conf
