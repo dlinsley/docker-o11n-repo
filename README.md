@@ -5,8 +5,11 @@ Instead of spinning up a vRO VM, this Dockerfile builds a nginx based container 
 
 This GIT repository does not contain the Maven repository for vRO libraries.
 
-    #Get the Maven repository from your vRO Appliance
+    #Get the Maven repository from your vRO Appliance (7.x)
     scp -r root@vrohost.corp.local:/usr/lib/vco/downloads/vco-repo .
+
+    #For vRO 8.x, try copying this folder from: /data/vco/usr/lib/vco/downloads/vco-repo 
+
     chmod -R a+x vco-repo
 
     #Build a version of the Container Image
